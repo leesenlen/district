@@ -1,0 +1,8 @@
+<?php
+$content = <<<EOL
+<tr class='provincetr'><td><a href='11.html'>北京市<br/></a></td><td><a href='12.html'>天津市<br/></a></td><td><a href='13.html'>河北省<br/></a></td><td><a href='14.html'>山西省<br/></a></td><td><a href='15.html'>内蒙古自治区<br/></a></td><td><a href='21.html'>辽宁省<br/></a></td><td><a href='22.html'>吉林省<br/></a></td><td><a href='23.html'>黑龙江省<br/></a></td></tr><tr class='provincetr'><td><a href='31.html'>上海市<br/></a></td><td><a href='32.html'>江苏省<br/></a></td><td><a href='33.html'>浙江省<br/></a></td><td><a href='34.html'>安徽省<br/></a></td><td><a href='35.html'>福建省<br/></a></td><td><a href='36.html'>江西省<br/></a></td><td><a href='37.html'>山东省<br/></a></td><td><a href='41.html'>河南省<br/></a></td></tr><tr class='provincetr'><td><a href='42.html'>湖北省<br/></a></td><td><a href='43.html'>湖南省<br/></a></td><td><a href='44.html'>广东省<br/></a></td><td><a href='45.html'>广西壮族自治区<br/></a></td><td><a href='46.html'>海南省<br/></a></td><td><a href='50.html'>重庆市<br/></a></td><td><a href='51.html'>四川省<br/></a></td><td><a href='52.html'>贵州省<br/></a></td></tr><tr class='provincetr'><td><a href='53.html'>云南省<br/></a></td><td><a href='54.html'>西藏自治区<br/></a></td><td><a href='61.html'>陕西省<br/></a></td><td><a href='62.html'>甘肃省<br/></a></td><td><a href='63.html'>青海省<br/></a></td><td><a href='64.html'>宁夏回族自治区<br/></a></td><td><a href='65.html'>新疆维吾尔自治区<br/></a></td></tr>
+EOL;
+
+preg_match_all('/class=\'provincetr\'>([\s\S]*?)<\/tr>/', $content, $matches);
+
+print_r($matches);

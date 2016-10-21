@@ -1,2 +1,2 @@
 # district
-district selector of China
+District selector of China
